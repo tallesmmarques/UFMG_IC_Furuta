@@ -71,13 +71,13 @@ float global_min_pwm = 0.0;
     float new_pwm = constrain(map_float(abs(pwm), 0, 1, global_min_pwm, 1), 0, 1);
     if (pwm > 0) 
     {
-      digitalWrite(IN2, HIGH);
-      digitalWrite(IN1, LOW);
+      digitalWrite(IN1, HIGH);
+      digitalWrite(IN2, LOW);
     } 
     else if (pwm < 0) 
     {
-      digitalWrite(IN2, LOW);
-      digitalWrite(IN1, HIGH);
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, HIGH);
     } 
     else 
     {

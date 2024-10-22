@@ -5,9 +5,9 @@
 float f0 = 0.1; // Hz
 float f1 = 5; // Hz
 float chirp_pwm = 0.50;
-const float T = 60; // s
+const float T = 40; // s
 const float p = T*2; // período da onda triangular
-const float simulation_time = T*2;
+const float simulation_time = T*4;
 const float Ts = 1.0/(10*f1); // tempo de amostragem para a frequência de amostragem 10x maior que f1
 
 float t0, t, t_trig, last_t, diff;
