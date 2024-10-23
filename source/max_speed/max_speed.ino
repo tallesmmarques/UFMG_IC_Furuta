@@ -4,7 +4,7 @@
 #define rad_s2RPM 60.0/(2*PI)
 
 float pwm = 0;
-const float Ts = 10e-3; // tempo de amostragem para a frequência de amostragem 10x maior que f1
+const float Ts = 10e-3;
 
 float t0, t, t_trig, last_t, diff;
 float u;
